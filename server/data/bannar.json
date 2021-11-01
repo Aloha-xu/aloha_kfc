@@ -1,0 +1,20 @@
+{
+    "result": [
+        {
+            "bannerImg": "https://kfc.insideria.vip/uploads/attach/2021/06/20210624/9838140d41ad542d1be988b95e20d26f.jpg",
+            "name": "泡菜肥牛鸡腿堡",
+            "pid": "Burger003"
+        },
+        {
+            "bannerImg": "https://kfc.insideria.vip/uploads/attach/2021/06/20210624/9ac75e872c6db3c9ed0f0d1f553be4f3.jpg",
+            "name": "金商城11.11",
+            "pid": "eleven002"
+        },
+        {
+            "bannerImg": "https://kfc.insideria.vip/uploads/attach/2021/06/20210624/c558a101ec068483d2de3d200f98041a.jpg",
+            "name": "双11超值缤纷狂享套餐(5-6人)",
+            "pid": "Package001"
+        }
+    ],
+    "code": 300
+}

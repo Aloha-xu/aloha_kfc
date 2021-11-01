@@ -1,0 +1,610 @@
+{
+
+  "result": [
+    {
+      "name": "【大块多汁】香辣鸡排堡套餐",
+      "id": 1,
+      "pid": "Scssm001",
+      "type": "Package",
+      "Price": 19,
+      "Market_price": 31,
+      "quantity": 1,
+      "desc": [
+        "1个香辣鸡排堡",
+        "1份黑椒鸡块",
+        "1个紫薯豌豆派",
+        "1杯可乐"
+      ],
+      "notice": [
+        "安徽/贵州/沈阳区域团队无紫薯豌豆派，门店根据实际情况更换为同价其他派系列产品",
+        "山东区域门店紫薯豌豆派更换为同价小薯条",
+        "沈阳区域门店紫薯豌豆派更换为香芋派",
+        "黑龙江区域门店香辣鸡排堡更换为同价秘制烤鸡腿堡",
+        "保定区域部分门店无紫薯豌豆派，门店根据实际情况更换为同价香脆薯饼或香芋地瓜丸。",
+        "山西区域香辣鸡排堡更换为同价秘制烤鸡腿堡。",
+        "江苏区域紫薯豌豆派断货可更换成香芋地瓜丸",
+        "天津区域香辣鸡排堡断货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/3126aa431bab70456c0f3f053ac89b0c39930.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/3126aa431bab70456c0f3f053ac89b0c39930.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "【两堡一卷】套餐1份",
+      "id": 2,
+      "pid": "tfov001",
+      "type": "Package",
+      "Price": 19.9,
+      "Market_price": 36,
+      "quantity": 1,
+      "desc": [
+        "牛气冲天堡1个",
+        "鳕鱼堡1个",
+        "辣味鸡肉卷1个"
+      ],
+      "notice": [],
+      "largeImg": "https://p1.meituan.net//deal/020414144d73c264996451643fbc4b9523538.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/020414144d73c264996451643fbc4b9523538.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "大饼卷黑椒牛肉+薯条+黑椒鸡块+中可1份",
+      "id": 3,
+      "pid": "Bpff001",
+      "type": "Package",
+      "Price": 18.5,
+      "Market_price": 36,
+      "quantity": 1,
+      "desc": [
+        "大饼卷黑椒牛肉",
+        "薯条",
+        "黑椒鸡块",
+        "中可"
+      ],
+      "notice": [
+        "薯条分量以门店实际为准"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/378b72c99c1bb2e7b2198e839209656b29896.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/378b72c99c1bb2e7b2198e839209656b29896.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "香辣鸡排堡+紫薯豌豆派1份",
+      "id": 4,
+      "pid": "sppie001",
+      "type": "Package",
+      "Price": 8.15,
+      "Market_price": 20,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡排堡",
+        "紫薯豌豆派"
+      ],
+      "notice": [
+        "江苏区域：紫薯豌豆派断货可更换成香芋地瓜丸",
+        "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡",
+        "贵州区域：紫薯豌豆派断货替换成香芋地瓜丸"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "紫薯豌豆派+香酥鸡腿1份",
+      "id": 5,
+      "pid": "pcl001",
+      "type": "Package",
+      "Price": 9.9,
+      "Market_price": 16,
+      "quantity": 1,
+      "desc": [
+        "香酥鸡腿1份",
+        "紫薯豌豆派"
+      ],
+      "notice": [
+        "贵州区域紫薯豌豆派替换为同等价格的香芋地瓜丸"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/2381293a85755b4529f0bd18251ac06720899.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/2381293a85755b4529f0bd18251ac06720899.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "香辣鸡排堡+大饼卷黑椒牛肉+辣味鸡肉卷+辣辣辣条半鸡+黑椒鸡块+薯条+中可（3杯）1份",
+      "id": 6,
+      "pid": "xdllhsk001",
+      "type": "Package",
+      "Price": 48.8,
+      "Market_price": 89,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡排堡",
+        "大饼卷黑椒牛肉",
+        "辣味鸡肉卷",
+        "辣辣辣条半鸡",
+        "黑椒鸡块",
+        "薯条",
+        "中可（3杯）1份"
+      ],
+      "notice": [
+        "天津门店大饼卷黑椒牛肉售罄替换成同等价格的牛气冲天堡",
+        "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/5296bda8ceb8a30758ef1c446aa7b01f36107.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/5296bda8ceb8a30758ef1c446aa7b01f36107.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "川味脆脆鸡+中可1份",
+      "id": 7,
+      "pid": "ck001",
+      "type": "Package",
+      "Price": 15.9,
+      "Market_price": 34,
+      "quantity": 1,
+      "desc": [
+        "川味脆脆鸡",
+        "中可1份"
+      ],
+      "notice": [],
+      "largeImg": "https://p0.meituan.net//deal/d7cb97d89226ca6987e5b54b0568e4e629831.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/d7cb97d89226ca6987e5b54b0568e4e629831.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "豪华炸鸡桶",
+      "id": 8,
+      "pid": "hhzj001",
+      "type": "Package",
+      "Price": 33.9,
+      "Market_price": 52,
+      "quantity": 1,
+      "desc": [
+        "【新品】川味脆脆鸡*2",
+        "中杯可乐*2"
+      ],
+      "notice": [
+        "黑龙江、山西、陕西，贵州、重庆、沈阳、江苏、汕头、河南、广西部分门店可乐更换为华莱士20周年定制款罐装可乐，售完更换为中杯可乐。"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/c5a5d603a0887a9b97d7ce0c8c683e1f132620.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/c5a5d603a0887a9b97d7ce0c8c683e1f132620.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "【肉多多】牛堡鸡肉卷组合双人餐",
+      "id": 9,
+      "pid": "rnjqc001",
+      "type": "Package",
+      "Price": 32,
+      "Market_price": 57,
+      "quantity": 1,
+      "desc": [
+        "1个辣味鸡肉卷",
+        "1个牛气冲天堡",
+        "1份鸡米花",
+        "1份紫薯豌豆派",
+        "1份薯条",
+        "2杯中可"
+      ],
+      "notice": [
+        "安徽/贵州/沈阳区域团队无紫薯豌豆派，门店根据实际情况更换为其他派系列产品",
+        "山东区域门店紫薯豌豆派更换为黑椒鸡块",
+        "沈阳/江苏区域门店紫薯豌豆派更换为香芋派",
+        "薯条各区域名称不一致，以实际门店情况为准",
+        "保定区域门店牛气冲天堡更换等价香辣鸡排堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "豪华炸鸡汉堡单人餐1份",
+      "id": 10,
+      "pid": "huzjdd001",
+      "type": "Package",
+      "Price": 20,
+      "Market_price": 33,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡排堡",
+        "黑椒鸡块",
+        "鸡米花",
+        "中可"
+      ],
+      "notice": [
+        "河北石家庄香辣鸡排堡换成同等价位的香辣鸡腿堡",
+        "浙江部分门店鸡米花换成同等价位的大薯条",
+        "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p1.meituan.net//deal/26e0fe3c4a89e37278ec1fab353ade6641584.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/26e0fe3c4a89e37278ec1fab353ade6641584.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "蜜汁手扒鸡+香辣鸡排堡+牛气冲天堡+大薯+2杯中可1份",
+      "id": 11,
+      "pid": "mxndk001",
+      "type": "Package",
+      "Price": 42.8,
+      "Market_price": 90,
+      "quantity": 1,
+      "desc": [
+        "蜜汁手扒鸡",
+        "香辣鸡排堡",
+        "牛气冲天堡",
+        "大薯",
+        "2杯中可"
+      ],
+      "notice": [
+        "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/e916fa9ac2a64eed35af8dac2f54e99041058.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/e916fa9ac2a64eed35af8dac2f54e99041058.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "香辣鸡排堡+中可1份",
+      "id": 12,
+      "pid": "xlzk001",
+      "type": "Package",
+      "Price": 9.9,
+      "Market_price": 19,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡排堡",
+        "中可1份"
+      ],
+      "notice": [
+        "天津区域：香辣鸡排堡缺货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/d54d9a62287f00a6a0a7382e779a6fda23913.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/d54d9a62287f00a6a0a7382e779a6fda23913.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "牛气冲天堡+华香脆骨串+可乐（中）1份",
+      "id": 13,
+      "pid": "nhk001",
+      "type": "Package",
+      "Price": 12.9,
+      "Market_price": 23,
+      "quantity": 1,
+      "desc": [
+        "牛气冲天堡",
+        "华香脆骨串",
+        "可乐（中）"
+      ],
+      "notice": [
+        "河南华香脆骨串换成同等价位的香芋地瓜丸",
+        "石家庄牛气冲天堡换成同等价位的烟熏牛肉堡",
+        "上海区域华香脆骨串已断货，门店可更换成同等价位的一口肠"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/d0b3abea40ff97e9289d7c721d8427ea31615.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/d0b3abea40ff97e9289d7c721d8427ea31615.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "双堡炸鸡桶1份",
+      "id": 14,
+      "pid": "sbzjt001",
+      "type": "Package",
+      "Price": 40.8,
+      "Market_price": 75,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡腿堡1个",
+        "香辣鸡排堡1个",
+        "【新品】川味脆脆鸡3块",
+        "黑椒鸡块1份",
+        "红运热辣鸡排1块",
+        "中杯可乐*2"
+      ],
+      "notice": [
+        "山东区域香辣鸡排堡更换为同价原味鸡排堡。",
+        "黑龙江区域香辣鸡排堡更换为同价秘制烤鸡腿堡",
+        "黑龙江、山西、陕西，贵州、重庆、沈阳、江苏、汕头、河南、广西部分门店可乐更换为华莱士20周年定制款罐装可乐，售完更换为中杯可乐。",
+        "陕西区域香辣鸡腿堡更换为同价鸡排堡。",
+        "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/1ef13b6262c3eaf3c42127ed7fc61a01130193.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/1ef13b6262c3eaf3c42127ed7fc61a01130193.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "红运热辣鸡排+可乐（中）1份",
+      "id": 15,
+      "pid": "hyrk001",
+      "type": "Package",
+      "Price": 9.9,
+      "Market_price": 17,
+      "quantity": 1,
+      "desc": [
+        "红运热辣鸡排",
+        "可乐（中）"
+      ],
+      "notice": [],
+      "largeImg": "https://p1.meituan.net//deal/419ad933b13382e22bf064458272f77628937.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/419ad933b13382e22bf064458272f77628937.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "鳕鱼堡+中可1份",
+      "id": 16,
+      "pid": "xybk001",
+      "type": "Package",
+      "Price": 8.2,
+      "Market_price": 18,
+      "quantity": 1,
+      "desc": [
+        "鳕鱼堡",
+        "中可"
+      ],
+      "notice": [
+        "江苏区域：门店断货可替换成同等价位的牛气冲天堡"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/2210193a431bf55b2150324173d9972a28523.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/2210193a431bf55b2150324173d9972a28523.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "牛气冲天堡+唐扬鸡块+薯条+中可1份",
+      "id": 17,
+      "pid": "ntsz001",
+      "type": "Package",
+      "Price": 18.5,
+      "Market_price": 39,
+      "quantity": 1,
+      "desc": [
+        "牛气冲天堡",
+        "唐扬鸡块",
+        "薯条",
+        "中可"
+      ],
+      "notice": [
+        "薯条分量以门店实际为准；",
+        "江苏区域：唐扬鸡块门店断货可更换成同等价位的黑椒鸡块"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/f8c40cd36b40850217764cfba22e74e934313.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/f8c40cd36b40850217764cfba22e74e934313.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "卤辣辣卤鸭鸭风味鸡腿堡/卷单人餐",
+      "id": 18,
+      "pid": "rlryfj001",
+      "type": "Package",
+      "Price": 34,
+      "Market_price": 40,
+      "quantity": 1,
+      "desc": [
+        "卤辣辣卤鸭鸭风味鸡腿堡"
+      ],
+      "notice": [
+        "1份卤辣辣卤鸭鸭风味鸡腿堡或卤辣辣卤鸭鸭风味鸡腿卷",
+        "1份热辣香骨鸡（3块装）",
+        "1杯百事可乐（中）"
+      ],
+      "largeImg": "https://p0.meituan.net//deal/89e820bbac605499f27e708bc39268e752798.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/89e820bbac605499f27e708bc39268e752798.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "【下午茶】小食拼盘双人下午茶",
+      "id": 19,
+      "pid": "xsps001",
+      "type": "Package",
+      "Price": 49.9,
+      "Market_price": 65.5,
+      "quantity": 1,
+      "desc": [
+        "1份黄金鸡块(5块装)",
+        "1份新奥尔良烤翅（2块装）",
+        "1份劲爆鸡米花(小)",
+        "1份薯条(小))",
+        "2份原味圣代(北美蓝莓酱/冲绳黑糖珍珠酱)"
+      ],
+      "notice": [],
+      "largeImg": "https://p1.meituan.net//deal/0c354f751546ff7a371d7d489c46de2e45989.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/0c354f751546ff7a371d7d489c46de2e45989.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "咖啡奶茶",
+      "id": 20,
+      "pid": "kfnc001",
+      "type": "drink",
+      "Price": 9.9,
+      "Market_price": 12.5,
+      "quantity": 1,
+      "desc": [
+        "咖啡奶茶"
+      ],
+      "notice": [],
+      "largeImg": "https://p1.meituan.net//deal/572abf1ad23f9f9ceae083bd7eb05bda36929.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/572abf1ad23f9f9ceae083bd7eb05bda36929.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "单人尊享餐（堡块可）",
+      "id": 21,
+      "pid": "drzx001",
+      "type": "Package",
+      "Price": 12.9,
+      "Market_price": 24,
+      "quantity": 1,
+      "desc": [
+        "香辣鸡腿堡",
+        "上校鸡块",
+        "中可乐"
+      ],
+      "notice": [],
+      "largeImg": "https://p1.meituan.net//deal/148a3a81ad27bc3017a79a69d2279cd3291454.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p1.meituan.net//deal/148a3a81ad27bc3017a79a69d2279cd3291454.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "棒打鲜橙（热/冰）1杯",
+      "id": 22,
+      "pid": "bdxc001",
+      "type": "drink",
+      "Price": 5.5,
+      "Market_price": 6,
+      "quantity": 1,
+      "desc": [
+        "棒打鲜橙"
+      ],
+      "notice": [],
+      "largeImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "招牌柠檬水1杯",
+      "id": 23,
+      "pid": "nms001",
+      "type": "drink",
+      "Price": 3.5,
+      "Market_price": 4,
+      "quantity": 1,
+      "desc": [
+        "招牌柠檬水"
+      ],
+      "notice": [],
+      "largeImg": "https://p0.meituan.net//deal/1ea3a22d9079abc4314b65f1a8ba407d7926.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@150w_150h_1e_1c"
+    },
+    {
+      "name": "多肉西瓜冰茶（大杯）1份",
+      "id": 24,
+      "pid": "drxgb001",
+      "type": "drink",
+      "Price": 12.5,
+      "Market_price": 13,
+      "quantity": 1,
+      "desc": [
+        "多肉西瓜冰茶（大杯）"
+      ],
+      "notice": [],
+      "largeImg": "https://p0.meituan.net//deal/29eb6efc628c1d6495887f58ac6968e7248231.jpg@220w_129h_1e_1c",
+      "smallImg": "https://p0.meituan.net//deal/29eb6efc628c1d6495887f58ac6968e7248231.jpg@150w_150h_1e_1c"
+    },
+    {
+      "largeImg": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20191029%2F0e6ffb3b11904806937808f8d33dd7ab.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638013766&t=7d5b26519a2ddab42171f503174f229e",
+      "smallImg": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10116%2F383%2Fw630h553%2F20191030%2F844c-ihqyuym4646664.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638013725&t=1bcf393e72be70bf9002887c4ba4b28d",
+      "name": "泡菜肥牛鸡腿堡",
+      "pid": "Burger003",
+      "type": "",
+      "Price": 12.5,
+      "Market_price": 13,
+      "desc": [
+        "面包",
+        "泡菜汉堡酱",
+        "生菜",
+        "泡菜调理包",
+        "3片肥牛",
+        "辣腿",
+        "泡菜汉堡酱",
+        "面包"
+      ]
+    },
+    {
+      "largeImg": "https://kfc.insideria.vip/uploads/attach/2021/06/20210624/9ac75e872c6db3c9ed0f0d1f553be4f3.jpg",
+      "smallImg": "https://kfc.insideria.vip/uploads/attach/2021/06/20210624/9ac75e872c6db3c9ed0f0d1f553be4f3.jpg",
+      "name": "金商城11.11",
+      "pid": "eleven002",
+      "type": "Package",
+      "Price": 12.5,
+      "Market_price": 13,
+      "desc": [
+        "香辣鸡腿堡",
+        "鸡肉卷一份",
+        "一对香辣鸡翅",
+        "橙汁",
+        "热水壶",
+        "水杯一个",
+        "中可1份"
+      ]
+    },
+    {
+      "largeImg": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.alicdn.com%2Fimgextra%2Fi1%2F2937365488%2FO1CN01WH5OAi1qPYB5yqiuu_%21%212937365488.jpg&refer=http%3A%2F%2Fimg.alicdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638013891&t=b0db601738392e1382c299d252d28482",
+      "smallImg": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mgpyh.com%2Fpost_image%2F77fe76d04d03c79135d3810befba6733.jpg&refer=http%3A%2F%2Fimg.mgpyh.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638013872&t=4d07cb61939d72e4708928cac41c60f4",
+      "name": "双11超值缤纷狂享套餐(5-6人)",
+      "pid": "Package001",
+      "type": "Package",
+      "Price": 12.5,
+      "Market_price": 13,
+      "desc": [
+        "香辣鸡腿堡(2份)",
+        "鸡肉卷二份",
+        "一对香辣鸡翅",
+        "薯条（2份）",
+        "蛋挞",
+        "鸡块两份",
+        "中可2份",
+        "小可4杯",
+        "圣代冰淇淋"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1992_115.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1992_115.jpg",
+      "name": "玫瑰酥饼",
+      "pid": "meigs001",
+      "type": "snack",
+      "Price": 8,
+      "Market_price": 15,
+      "desc": [
+        "肯德基玫瑰酥饼"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1992_112.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1992_112.jpg",
+      "name": "榴莲爆浆鸡块",
+      "pid": "llbj001",
+      "type": "snack",
+      "Price": 11.50,
+      "Market_price": 11.50,
+      "desc": [
+        "榴莲爆浆鸡块4块"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-122_209.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-122_209.jpg",
+      "name": "热辣海苔薯片脆皮鸡",
+      "pid": "rlhtspc001",
+      "type": "snack",
+      "Price": 12.00,
+      "Market_price": 12.00,
+      "desc": [
+        "肯德基热辣海苔薯片脆皮鸡1块"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-2242_121.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-2242_121.jpg",
+      "name": "港式烧味脆皮大鸡腿",
+      "pid": "gsswcpjt001",
+      "type": "snack",
+      "Price": 22.00,
+      "Market_price": 22.00,
+      "desc": [
+        "港式烧味脆皮大鸡腿1份"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-181016_904.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-181016_904.jpg",
+      "name": "热辣香骨鸡",
+      "pid": "rlxgj001",
+      "type": "snack",
+      "Price": 10.50,
+      "Market_price": 10.50,
+      "desc": [
+        "热辣香骨鸡1份"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-214_152.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-214_152.jpg",
+      "name": "藤椒肯大大鸡排",
+      "pid": "tjkdjp001",
+      "type": "snack",
+      "Price": 11.00,
+      "Market_price": 11.00,
+      "desc": [
+        "藤椒肯大大鸡排1份"
+      ]
+    },
+    {
+      "largeImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1971_181.jpg",
+      "smallImg": "http://cache.5ikfc.com/imgs/kfc/menu/snack/kfc-5ikfc-1971_181.jpg",
+      "name": "香辣黄金鸡柳",
+      "pid": "xlhjl001",
+      "type": "snack",
+      "Price": 11.50,
+      "Market_price": 11.50,
+      "desc": [
+        "香辣黄金鸡柳1份(4条)"
+      ]
+    }
+  ]
+}

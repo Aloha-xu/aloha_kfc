@@ -1,0 +1,268 @@
+{
+    "result": [
+      {
+        "name": "【大块多汁】香辣鸡排堡套餐",
+        "id": 1,
+        "pid":"Scssm001",
+        "Price": 19,
+        "Market_price": 31,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/3126aa431bab70456c0f3f053ac89b0c39930.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/3126aa431bab70456c0f3f053ac89b0c39930.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "【两堡一卷】套餐1份",
+        "id": 2,
+        "pid":"tfov001",
+        "Price": 19.9,
+        "Market_price": 36,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/020414144d73c264996451643fbc4b9523538.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/020414144d73c264996451643fbc4b9523538.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "大饼卷黑椒牛肉+薯条+黑椒鸡块+中可1份",
+        "id": 3,
+        "pid":"Bpff001",
+        "Price": 18.5,
+        "Market_price": 36,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/378b72c99c1bb2e7b2198e839209656b29896.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/378b72c99c1bb2e7b2198e839209656b29896.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "香辣鸡排堡+紫薯豌豆派1份",
+        "id": 4,
+        "pid":"sppie001",
+        "Price": 8.15,
+        "Market_price": 20,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "紫薯豌豆派+香酥鸡腿1份",
+        "id": 5,
+        "pid":"pcl001",
+        "Price": 9.9,
+        "Market_price": 16,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/2381293a85755b4529f0bd18251ac06720899.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/2381293a85755b4529f0bd18251ac06720899.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "香辣鸡排堡+大饼卷黑椒牛肉+辣味鸡肉卷+辣辣辣条半鸡+黑椒鸡块+薯条+中可（3杯）1份",
+        "id": 6,
+        "pid":"xdllhsk001",
+        "Price": 48.8,
+        "Market_price": 89,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/5296bda8ceb8a30758ef1c446aa7b01f36107.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/5296bda8ceb8a30758ef1c446aa7b01f36107.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "川味脆脆鸡+中可1份",
+        "id": 7,
+        "pid":"ck001",
+        "Price": 15.9,
+        "Market_price": 34,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/d7cb97d89226ca6987e5b54b0568e4e629831.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/d7cb97d89226ca6987e5b54b0568e4e629831.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "豪华炸鸡桶",
+        "id": 8,
+        "pid":"hhzj001",
+        "Price": 33.9,
+        "Market_price": 52,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/c5a5d603a0887a9b97d7ce0c8c683e1f132620.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/c5a5d603a0887a9b97d7ce0c8c683e1f132620.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "【肉多多】牛堡鸡肉卷组合双人餐",
+        "id": 9,
+        "pid":"rnjqc001",
+        "Price": 32,
+        "Market_price": 57,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "豪华炸鸡汉堡单人餐1份",
+        "id": 10,
+        "pid":"huzjdd001",
+        "Price": 20,
+        "Market_price": 33,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/26e0fe3c4a89e37278ec1fab353ade6641584.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/26e0fe3c4a89e37278ec1fab353ade6641584.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "蜜汁手扒鸡+香辣鸡排堡+牛气冲天堡+大薯+2杯中可1份",
+        "id": 11,
+        "pid":"mxndk001",
+        "Price": 42.8,
+        "Market_price": 90,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/e916fa9ac2a64eed35af8dac2f54e99041058.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/e916fa9ac2a64eed35af8dac2f54e99041058.jpg@150w_150h_1e_1c",
+        "recommend":true
+      },
+      {
+        "name": "香辣鸡排堡+中可1份",
+        "id": 12,
+        "pid":"xlzk001",
+        "Price": 9.9,
+        "Market_price": 19,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/d54d9a62287f00a6a0a7382e779a6fda23913.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/d54d9a62287f00a6a0a7382e779a6fda23913.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "牛气冲天堡+华香脆骨串+可乐（中）1份",
+        "id": 13,
+        "pid":"nhk001",
+        "Price": 12.9,
+        "Market_price": 23,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/d0b3abea40ff97e9289d7c721d8427ea31615.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/d0b3abea40ff97e9289d7c721d8427ea31615.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "双堡炸鸡桶1份",
+        "id": 14,
+        "pid":"sbzjt001",
+        "Price": 40.8,
+        "Market_price": 75,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/1ef13b6262c3eaf3c42127ed7fc61a01130193.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/1ef13b6262c3eaf3c42127ed7fc61a01130193.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "红运热辣鸡排+可乐（中）1份",
+        "id": 15,
+        "pid":"hyrk001",
+        "Price": 9.9,
+        "Market_price": 17,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/419ad933b13382e22bf064458272f77628937.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/419ad933b13382e22bf064458272f77628937.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "鳕鱼堡+中可1份",
+        "id": 16,
+        "pid":"xybk001",
+        "Price": 8.2,
+        "Market_price": 18,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/2210193a431bf55b2150324173d9972a28523.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/2210193a431bf55b2150324173d9972a28523.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "牛气冲天堡+唐扬鸡块+薯条+中可1份",
+        "id": 17,
+        "pid":"ntsz001",
+        "Price": 18.5,
+        "Market_price": 39,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/f8c40cd36b40850217764cfba22e74e934313.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/f8c40cd36b40850217764cfba22e74e934313.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "卤辣辣卤鸭鸭风味鸡腿堡/卷单人餐兑换券1份",
+        "id": 18,
+        "pid":"rlryfj001",
+        "Price": 34,
+        "Market_price": 40,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/89e820bbac605499f27e708bc39268e752798.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/89e820bbac605499f27e708bc39268e752798.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "【下午茶】小食拼盘双人下午茶",
+        "id": 19,
+        "pid":"xsps001",
+        "Price": 49.9,
+        "Market_price": 65.5,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/0c354f751546ff7a371d7d489c46de2e45989.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/0c354f751546ff7a371d7d489c46de2e45989.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "咖啡奶茶",
+        "id": 20,
+        "pid":"kfnc001",
+        "Price": 9.9,
+        "Market_price": 12.5,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/572abf1ad23f9f9ceae083bd7eb05bda36929.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/572abf1ad23f9f9ceae083bd7eb05bda36929.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "单人尊享餐（堡块可）",
+        "id": 21,
+        "pid":"drzx001",
+        "Price": 12.9,
+        "Market_price": 24,
+        "quantity": 1,
+        "largeImg": "https://p1.meituan.net//deal/148a3a81ad27bc3017a79a69d2279cd3291454.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p1.meituan.net//deal/148a3a81ad27bc3017a79a69d2279cd3291454.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "棒打鲜橙（热/冰）1杯",
+        "id": 22,
+        "pid":"bdxc001",
+        "Price": 5.5,
+        "Market_price": 6,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "招牌柠檬水1杯",
+        "id": 23,
+        "pid":"nms001",
+        "Price": 3.5,
+        "Market_price": 4,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/1ea3a22d9079abc4314b65f1a8ba407d7926.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/c2b8ef25d62dcc4d7b4e0f2ddb69dfa432889.jpg@150w_150h_1e_1c",
+        "recommend":false
+      },
+      {
+        "name": "多肉西瓜冰茶（大杯）1份",
+        "id": 24,
+        "pid":"drxgb001",
+        "Price": 12.5,
+        "Market_price": 13,
+        "quantity": 1,
+        "largeImg": "https://p0.meituan.net//deal/29eb6efc628c1d6495887f58ac6968e7248231.jpg@220w_129h_1e_1c",
+        "smallImg": "https://p0.meituan.net//deal/29eb6efc628c1d6495887f58ac6968e7248231.jpg@150w_150h_1e_1c",
+        "recommend":false
+      }
+    ]
+  }

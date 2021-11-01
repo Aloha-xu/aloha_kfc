@@ -1,0 +1,35 @@
+{
+    "address": [
+        {
+            "userId": "1",
+            "name": "翁伟鹏",
+            "phone": "17565225521",
+            "area": "东莞寮步镇",
+            "detialArea": "东莞学校",
+            "mail": "51213",
+            "defaultAddress": false,
+            "addId": 1635339127365
+        },
+        {
+            "userId": "2",
+            "name": "翁伟鹏",
+            "phone": "17565225521",
+            "area": "东莞寮步镇",
+            "detialArea": "东莞学校",
+            "mail": "51213",
+            "defaultAddress": false,
+            "addId": 1635339127364
+        },
+        {
+            "userId": "1",
+            "name": "翁伟鹏",
+            "phone": "17565225521",
+            "area": "东莞寮步镇",
+            "detialArea": "东莞学校",
+            "mail": "51213",
+            "defaultAddress": true,
+            "addId": 1635339291342
+        }
+    ],
+    "total": 3
+}
