@@ -202,8 +202,7 @@ module.exports = app => {
         res.send('one')
     })
 
-
-    //请求bannar 轮播图数据  不行
+    //请求bannar 轮播图数据 
 
     app.get('/bannar', (req, res) => {
         console.log(req.query);
@@ -451,7 +450,13 @@ module.exports = app => {
     //加入购物车  需要发送个人id  商品数据product   还有数量 count   还有加入的时间created_at
     app.post('/addCar', (req, res) => {
         if (JSON.stringify(req.body) === '{}') {
-            res.send({ msg: "传递的参数不能为空,请检查", status: 205 });
+            res.send({ msg: "传递的参数不能为空,请检查", status: 205 ,data:req.body});
+            return
+        }
+
+        // 如果数量为零也不行
+        if(req.body.count==0){
+            res.send({ msg: "数量不能为零", status: 207 });
             return
         }
 
@@ -479,7 +484,7 @@ module.exports = app => {
             person = JSON.parse(person);//将字符串转换为json对象
 
             for (let index = 0; index < person.car.length; index++) {
-                if (params.product.pid == person.car[index].product.pid) {
+                if (params.product.pid == person.car[index].product.pid && params.id == person.car[index].id) {
                     res.send({ msg: "该商品已存在", stutas: 1205 })
                     return
                 }
@@ -566,7 +571,6 @@ module.exports = app => {
 
                 let carData = [];
                 for (let index = 0; index < person.car.length; index++) {
-
                     if (params.id == person.car[index].id) {
                         carData.push(person.car[index])
                     }
@@ -584,6 +588,72 @@ module.exports = app => {
         writeJson(params)
 
     })
+
+
+    //删除购物车里面的内容   需要发送个人id 和购物车的carId
+    app.post('/deleteCar', (req, res) => {
+
+        // 这是我传递的参数,测试一下
+        console.log('删除购物车的数据',req.body);
+
+        if (JSON.stringify(req.body) === '{}') {
+            res.send({ msg: "传递的参数不能为空,请检查", status: 205 });
+            return
+        }
+
+        // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
+        if (!req.body.hasOwnProperty('id') || !req.body.hasOwnProperty('carId')) {
+            res.send({ msg: "传递的参数有误请检查", status: 206 });
+            return
+        }
+
+        // return
+        var fs = require('fs');
+        var params = req.body//在真实的开发中id肯定是随机生成的而且不会重复的，下一篇写如何生成随机切不会重复的随机数，现在就模拟一下假数据
+
+        //写入json文件选项
+        function writeJson(params) {
+            //现将json文件读出来
+            fs.readFile('./data/car.json', function (err, data) {
+                // console.log(data);
+                if (err) {
+                    res.send({ msg: "删除购物车数据失败", stutas: 1500 })
+                    return console.error(err);
+                }
+
+                var person = data.toString();//将二进制的数据转换为字符串
+                person = JSON.parse(person);//将字符串转换为json对象
+
+                params.carId.forEach(v =>{
+                    const index = person.car.findIndex(item => item.carId===v)
+                    if(index === -1){
+                        return res.send({ msg: "删除购物车数据失败", stutas: 1500 })
+                    }
+                    person.car.splice(index,1);//移除对应的数据
+                })
+                
+                person.total = person.car.length;//定义一下总条数，为以后的分页打基础
+                console.log('person.data==>', person);
+                var str = JSON.stringify(person);//因为nodejs的写入文件只认识字符串或者二进制数，所以把json对象转换成字符串重新写入json文件中
+                fs.writeFile('./data/car.json', str, function (err) {
+                    if (err) {
+                        res.send({ msg: "删除购物车数据失败", stutas: 1500 })
+                        console.error(err);
+                    }
+
+                    res.send({ msg: "删除购物车数据成功", stutas: 1501 })
+                    console.log('----------新增成功-------------');
+                })
+            })
+        }
+
+        writeJson(params)
+
+    })
+
+
+    //添加一个方法 更新购物车商品的数量
+
 
 
     //测试用的

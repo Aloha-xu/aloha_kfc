@@ -32,7 +32,17 @@ const routes = [
 
     ]
   },
-  // 重定向
+  {
+    path:'/detail/:pid',
+    name:'Detail',
+    component:()=>import('../views/Detail.vue')
+  },
+  {
+    path:'/cart',
+    name:'Cart',
+    component:()=>import('../views/Cart.vue')
+  },
+  // 重定向  ⭐
   // * 除了上面已经定义的路径 会自动跳到想要的页面
   {
     path: '*',
@@ -43,7 +53,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode:"history"
 })
 
 export default router
