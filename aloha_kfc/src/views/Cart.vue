@@ -90,10 +90,12 @@ export default {
   methods: {
     onClickRight() {
       this.isShowSubmitBtn = !this.isShowSubmitBtn;
-      if(this.isShowSubmitBtn){
-        document.getElementsByClassName("van-nav-bar__text")[1].style.color = 'blue';
-      }else{
-        document.getElementsByClassName("van-nav-bar__text")[1].style.color = 'red';
+      if (this.isShowSubmitBtn) {
+        document.getElementsByClassName("van-nav-bar__text")[1].style.color =
+          "blue";
+      } else {
+        document.getElementsByClassName("van-nav-bar__text")[1].style.color =
+          "red";
       }
     },
     addSelectedGoods() {
@@ -111,12 +113,7 @@ export default {
     addGoodCount(e, carId) {
       //使用carid 判断添加哪一个
       console.log(e, carId);
-      this.cardGoods.map((item) => {
-        if (item.carId === carId) {
-          item.count = e;
-        }
-      });
-      this.computedTotalPrice();
+      this.updataGoodsCount(carId, e);
     },
     checkAll() {
       if (!this.allChecked) {
@@ -144,8 +141,11 @@ export default {
       })
         .then((res) => {
           this.getInfo();
+          this.$toast.success("成功删除");
         })
-        .catch((err) => {});
+        .catch((err) => {
+          this.$toast.fail("删除失败");
+        });
     },
     getInfo() {
       this.axios({
@@ -157,6 +157,24 @@ export default {
       })
         .then((res) => {
           this.cardGoods = res.data.data;
+        })
+        .catch((err) => {});
+    },
+    updataGoodsCount(carId, count) {
+      this.axios({
+        method: "post",
+        url: "/updataCar",
+        data: {
+          id: this.$store.state.uid,
+          carId: carId,
+          count: count,
+        },
+      })
+        .then((res) => {
+          //在这里修改selectedGoods的count
+          const index = this.selectedGoods.findIndex(item => item.carId === carId.name)
+          this.selectedGoods[index].count = count
+          this.getInfo();
           this.computedTotalPrice();
         })
         .catch((err) => {});
@@ -167,6 +185,7 @@ export default {
         totalprice = totalprice + item.count * item.product.Price;
       });
       this.totalPrice = totalprice * 100;
+      console.log(totalprice * 100)
     },
   },
   created() {

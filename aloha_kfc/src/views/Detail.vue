@@ -134,9 +134,11 @@ export default {
         },
       })
         .then((res) => {
-          console.log(res);
+          this.$toast.success('已加入购物车');
         })
-        .catch((err) => {});
+        .catch((err) => {
+          this.$toast.fail('加入购物车失败');
+        });
     }
   },
 };

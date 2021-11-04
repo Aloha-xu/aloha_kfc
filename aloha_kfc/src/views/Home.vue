@@ -1,11 +1,10 @@
 <!--  -->
 <template>
-    
   <div class="home">
     <div class="nav-box">
       <div class="time">下午好</div>
       <div class="search-box">
-        <van-search v-model="value" placeholder="请输入搜索关键词" />
+        <van-search v-model="searchValue" placeholder="请输入搜索关键词" />
       </div>
     </div>
 
@@ -16,7 +15,7 @@
         :autoplay="3000"
         indicator-color="white"
       >
-        <van-swipe-item v-for="item in banner" :key="item.pid">
+        <van-swipe-item v-for="(item,index) in banner" :key="index">
           <img :src="item.bannerImg" alt="" />
         </van-swipe-item>
       </van-swipe>
@@ -27,7 +26,7 @@
     </div>
 
     <div class="shop-content">
-      <div class="pro-item" v-for="item in product" :key="item" @click="goToDetailPapg(item.pid)">
+      <div class="pro-item" v-for="item in product" :key="item.pid" @click="goToDetailPapg(item.pid)">
         <div class="icon">
           <img :src="item.largeImg" alt="" />
         </div>
@@ -45,6 +44,7 @@ export default {
     return {
       banner: [],
       product: [],
+      searchValue:''
     };
   },
   // 生命周期函数 用来请求数据

@@ -7,7 +7,8 @@ import store from './store'
 import { Button } from 'vant'
 import 'lib-flexible/flexible'
 
-import { Form, Field ,Popup ,Tabbar, TabbarItem,Search,Swipe, SwipeItem,Stepper,Icon,Lazyload,Empty,SubmitBar,GoodsAction,GoodsActionIcon,GoodsActionButton,NavBar,Tab, Tabs,Cell,CellGroup,Checkbox, CheckboxGroup} from 'vant';
+import { Form, Field ,Popup ,Tabbar, TabbarItem,Search,Swipe, SwipeItem,Stepper,Icon,Lazyload,Empty,SubmitBar,GoodsAction,GoodsActionIcon,GoodsActionButton,NavBar,Tab, Tabs,Cell,CellGroup,Checkbox, CheckboxGroup,Toast} from 'vant';
+Vue.use(Toast);
 Vue.use(Tab);
 Vue.use(Tabs);
 Vue.use(GoodsAction);

@@ -1,0 +1,88 @@
+{
+    "order": [
+        {
+            "id": "1635646244934",
+            "product": [
+                {
+                    "id": "1635646244934",
+                    "count": 1,
+                    "product": {
+                        "name": "【肉多多】牛堡鸡肉卷组合双人餐",
+                        "id": 9,
+                        "pid": "rnjqc001",
+                        "type": "Package",
+                        "Price": 32,
+                        "Market_price": 57,
+                        "quantity": 1,
+                        "desc": [
+                            "1个辣味鸡肉卷",
+                            "1个牛气冲天堡",
+                            "1份鸡米花",
+                            "1份紫薯豌豆派",
+                            "1份薯条",
+                            "2杯中可"
+                        ],
+                        "notice": [
+                            "安徽/贵州/沈阳区域团队无紫薯豌豆派，门店根据实际情况更换为其他派系列产品",
+                            "山东区域门店紫薯豌豆派更换为黑椒鸡块",
+                            "沈阳/江苏区域门店紫薯豌豆派更换为香芋派",
+                            "薯条各区域名称不一致，以实际门店情况为准",
+                            "保定区域门店牛气冲天堡更换等价香辣鸡排堡"
+                        ],
+                        "largeImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@220w_129h_1e_1c",
+                        "smallImg": "https://p0.meituan.net//deal/1a2f2cbcc7db346ec02d5f3a2bf8073b43126.jpg@150w_150h_1e_1c"
+                    },
+                    "carId": "3cc9dbf0-3cb2-11ec-b7e7-9dc644e550b9",
+                    "created_at": "2021/11/03 22:27:56",
+                    "choose": true
+                }
+            ],
+            "allPrice": "32.00",
+            "address": "北京朝阳区幸福时光401号",
+            "orderId": "9a1ab6d0-3cb2-11ec-9b98-09b278cddc74",
+            "orderNo": 163594983289300,
+            "stutas": 0,
+            "created_at": "2021/11/03 22:30:32"
+        },
+        {
+            "id": "1635646244934",
+            "product": [
+                {
+                    "id": "1635646244934",
+                    "count": 1,
+                    "product": {
+                        "name": "香辣鸡排堡+紫薯豌豆派1份",
+                        "id": 4,
+                        "pid": "sppie001",
+                        "type": "Package",
+                        "Price": 8.15,
+                        "Market_price": 20,
+                        "quantity": 1,
+                        "desc": [
+                            "香辣鸡排堡",
+                            "紫薯豌豆派"
+                        ],
+                        "notice": [
+                            "江苏区域：紫薯豌豆派断货可更换成香芋地瓜丸",
+                            "天津区域：香辣鸡排堡断货更换成香辣鸡腿堡",
+                            "贵州区域：紫薯豌豆派断货替换成香芋地瓜丸"
+                        ],
+                        "largeImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@220w_129h_1e_1c",
+                        "smallImg": "https://p0.meituan.net//deal/0e2d473214e3c0a77310365e091b3b6c31258.jpg@150w_150h_1e_1c"
+                    },
+                    "carId": "3920b4a0-3cb3-11ec-87c3-1fe8f5b2530e",
+                    "created_at": "2021/11/03 22:34:59",
+                    "choose": true
+                }
+            ],
+            "allPrice": "8.15",
+            "address": "北京朝阳区幸福时光401号",
+            "orderId": "3cc308b0-3cb3-11ec-92ea-67f53ca2aac5",
+            "orderNo": 163595010578800,
+            "stutas": 0,
+            "created_at": "2021/11/03 22:35:05"
+        }
+    ],
+    "code": 800,
+    "total": 2
+}
