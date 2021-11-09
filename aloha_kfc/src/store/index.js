@@ -11,7 +11,9 @@ export default new Vuex.Store({
     uid:1635771707167,
 
     //加入购物车的商品信息
-    goods:[]
+    selectGoods:[],
+
+    totalPrice:0
 
   },
   mutations: {
@@ -21,8 +23,12 @@ export default new Vuex.Store({
       state.user = user
     },
 
-    addGoods(state,goods){
-      state.goods.push(goods)
+    setSelectGoods(state,goods){
+      state.selectGoods = goods
+    },
+
+    setTotalPrice(state,price){
+      state.totalPrice = price
     }
 
   },

@@ -314,6 +314,7 @@ module.exports = app => {
     //新增地址
     app.post('/address', (req, res) => {
 
+
         // 如果没有传递参数的情况  返回让他传递参数  处理 get和post请求的时候可能会出现的错误
         if (JSON.stringify(req.body) === '{}') {
             res.send({ msg: "传递的参数不能为空,请检查", status: 205 });
@@ -379,11 +380,11 @@ module.exports = app => {
                 var str = JSON.stringify(person);//因为nodejs的写入文件只认识字符串或者二进制数，所以把json对象转换成字符串重新写入json文件中
                 fs.writeFile('./data/address.json', str, function (err) {
                     if (err) {
-                        res.send({ msg: "添加地址失败" })
+                        res.send({ msg: "添加地址失败", stutas: 1990 })
                         console.error(err);
                     }
 
-                    res.send({ msg: "添加地址成功" })
+                    res.send({ msg: "添加地址成功", stutas: 1999 })
                     console.log('----------新增成功-------------');
                 })
             })
@@ -391,7 +392,9 @@ module.exports = app => {
         writeJson(params)
     })
 
+
     //查询地址
+
     app.get('/findAddress', (req, res) => {
         console.log(req.query);
 
@@ -702,6 +705,7 @@ module.exports = app => {
 
     //删除订单   修改订单的状态
     //提交订单  用户的id也要提交上去  生成一个订单orderId   还有就是产品提交过来 总价格, 产品数量  下单时间  生成订单编号时间戳   状态:'待发货0,待收货1,已收货2'
+
     //需要提交参数  用户id   产品提交过来  总价格
     //提交成功时候,要删除购物车的数据
     //参数  用户id  product  还有就是 总价格  用户地址  address
@@ -831,8 +835,9 @@ module.exports = app => {
 
     })
 
+
     //提交订单
-    //查询购物车数据  把个人id发送过来就行了
+    //查询购物车数据  把个人id发送过来就行了 和 状态码
     app.get('/getOrder', (req, res) => {
         console.log('req', req.query);
         if (JSON.stringify(req.query) === '{}') {
@@ -841,7 +846,7 @@ module.exports = app => {
         }
 
         // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
-        if (!req.query.hasOwnProperty('id')) {
+        if (!req.query.hasOwnProperty('id') || !req.query.hasOwnProperty('stutas')) {
             res.send({ msg: "传递的参数有误请检查", status: 206 });
             return
         }
@@ -866,9 +871,16 @@ module.exports = app => {
                 let carData = [];
                 for (let index = 0; index < person.order.length; index++) {
 
-                    if (params.id == person.order[index].id) {
-                        carData.push(person.order[index])
+                    if (params.stutas == 2) {
+                        if (params.id == person.order[index].id) {
+                            carData.push(person.order[index])
+                        }
+                    } else {
+                        if (params.id == person.order[index].id && params.stutas == person.order[index].stutas) {
+                            carData.push(person.order[index])
+                        }
                     }
+
                 }
 
                 if (carData.length == 0) {
@@ -885,10 +897,200 @@ module.exports = app => {
     })
 
 
+    //确认收货 改变状态 传递id和orderId
+    app.get('/take', (req, res) => {
+
+        if (JSON.stringify(req.query) === '{}') {
+            res.send({ msg: "传递的参数不能为空,请检查", status: 205 });
+            return
+        }
+
+        // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
+        if (!req.query.hasOwnProperty('id') || !req.query.hasOwnProperty('orderId')) {
+            res.send({ msg: "传递的参数有误请检查", status: 206 });
+            return
+        }
+
+        console.log('req', req.query);
+
+
+        var fs = require('fs');
+        var params = req.query//在真实的开发中id肯定是随机生成的而且不会重复的，下一篇写如何生成随机切不会重复的随机数，现在就模拟一下假数据
+
+        //写入json文件选项
+        function writeJson(params) {
+            //现将json文件读出来
+            fs.readFile('./data/order.json', function (err, data) {
+                // console.log(data);
+                if (err) {
+                    res.send({ msg: "修改订单失败", stutas: 1310 })
+                    return console.error(err);
+                }
+
+                console.log("data==>", data);
+                var person = data.toString();//将二进制的数据转换为字符串
+                person = JSON.parse(person);//将字符串转换为json对象
+
+
+                for (let index = 0; index < person.order.length; index++) {
+                    if (person.order[index].orderId == params.orderId && person.order[index].id == params.id) {
+                        person.order[index].stutas = 1
+                    }
+                }
+
+                console.log('person.data==>', person);
+                var str = JSON.stringify(person);//因为nodejs的写入文件只认识字符串或者二进制数，所以把json对象转换成字符串重新写入json文件中
+                fs.writeFile('./data/order.json', str, function (err) {
+                    if (err) {
+                        res.send({ msg: "修改订单失败", stutas: 1310 })
+                        console.error(err);
+                    }
+
+                    res.send({ msg: "修改订单成功", stutas: 1311 })
+                    // console.log('----------新增成功-------------');
+                })
+
+            })
+
+        }
+
+        writeJson(params)
+    })
+
+
+    //删除订单
+    app.post('/delectOrder', (req, res) => {
+        // 这是我传递的参数,测试一下   把个人id和  购物车的carId传递过来  carIdArr 是一个数组来的  里面放的购物车的carId
+
+        if (JSON.stringify(req.body) === '{}') {
+            res.send({ msg: "传递的参数不能为空,请检查", length: 0, status: 205 });
+            return
+        }
+
+
+        // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
+        if (!req.body.hasOwnProperty('id') || !req.body.hasOwnProperty('orderId')) {
+            res.send({ msg: "传递的参数有误请检查", status: 206 });
+            return
+        }
+
+        // return
+        var fs = require('fs');
+        var params = req.body//在真实的开发中id肯定是随机生成的而且不会重复的，下一篇写如何生成随机切不会重复的随机数，现在就模拟一下假数据
+
+
+        console.log('测试传递的值', params)
+        //写入json文件选项
+        function writeJson(params) {
+            //现将json文件读出来
+            fs.readFile('./data/order.json', function (err, data) {
+                // console.log(data);
+                if (err) {
+                    res.send({ msg: "删除订单失败", stutas: 500 })
+                    return console.error(err);
+                }
+
+                var person = data.toString();//将二进制的数据转换为字符串
+                person = JSON.parse(person);//将字符串转换为json对象
+
+                // 对数据进行筛选用es6的过滤
+                person.order = person.order.filter((item) => {
+                    // if(item){}
+
+                    if (!(item.id == params.id && item.orderId == params.orderId)) {
+                        return item
+                    }
+                })
+
+                // res.send({ msg: "添加购物车成功",data:params, stutas: 1201 })
+                // return 
+
+                // 从新将数据进行筛选一下   carIdArr 是一个数组来的
+
+                // 这是我传递的参数来的
+
+                // res.send({msg:'删除搞定',data:person})
+                // return 
+                person.total = person.order.length;//定义一下总条数，为以后的分页打基础
+                console.log('person.data==>', person);
+                var str = JSON.stringify(person);//因为nodejs的写入文件只认识字符串或者二进制数，所以把json对象转换成字符串重新写入json文件中
+                fs.writeFile('./data/order.json', str, function (err) {
+                    if (err) {
+                        res.send({ msg: "删除订单失败", stutas: 501 })
+                        console.error(err);
+                    }
+
+                    res.send({ msg: "删除订单成功", stutas: 502 })
+                    console.log('----------新增成功-------------');
+                })
+            })
+        }
+
+        writeJson(params)
+    })
+
+
+    //搜索
+    app.get('/search', (req, res) => {
+
+
+        if (JSON.stringify(req.query) === '{}') {
+            res.send({ msg: "传递的参数不能为空,请检查", stutas: 205 });
+            return
+        }
+
+        // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
+        if (!req.query.hasOwnProperty('key')) {
+            res.send({ msg: "传递的参数有误请检查", status: 206 });
+            return
+        }
+
+        if (req.query.key == "") {
+            res.send({ msg: "查询为空", data: [], status: 1901 });
+            return
+        }
+
+        var fs = require('fs');
+        var params = req.query//在真实的开发中id肯定是随机生成的而且不会重复的，下一篇写如何生成随机切不会重复的随机数，现在就模拟一下假数据
+
+        //写入json文件选项
+        function writeJson(params) {
+            //现将json文件读出来
+            fs.readFile('./data/product.json', function (err, data) {
+                // console.log(data);
+                if (err) {
+                    res.send({ msg: "搜索失败", stutas: 1600 })
+                    return console.error(err);
+                }
+
+                console.log("data==>", data);
+                var person = data.toString();//将二进制的数据转换为字符串
+                person = JSON.parse(person);//将字符串转换为json对象
+
+                let carData = [];
+                for (let index = 0; index < person.result.length; index++) {
+
+                    if (person.result[index].name.match(params.key)) {
+                        carData.push(person.result[index])
+                    }
+
+                }
+
+                if (carData.length == 0) {
+                    res.send({ msg: "查询为空", data: [], status: 1901 });
+                } else {
+                    res.send({ msg: "搜索成功", data: carData, stutas: 1902 })
+                }
+            })
+
+        }
+
+        writeJson(params)
+
+    })
 
 
     //测试用的
-
     app.post('/text', (req, res) => {
         console.log('我是body', req.body);
         res.send('我是测试post的')

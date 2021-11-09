@@ -1,32 +1,21 @@
 <!--  -->
 <template>
-  <div class="Main">
-
+  <div class="Main">
     <router-view />
     <van-tabbar v-model="active" active-color="	#1E90FF" inactive-color="#000">
-    <!-- <van-tabbar-item badge="3">
-    <span>自定义</span>
-    <template #icon="props">
-      <img :src="props.active ? icon.active : icon.inactive" />
-    </template>
-    </van-tabbar-item> -->
-    <van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
-    <van-tabbar-item to="/my" icon="manager-o">我的</van-tabbar-item>
+      <van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item to="/my" icon="manager-o">我的</van-tabbar-item>
     </van-tabbar>
-  </div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: '',
-  data () {
-    return {
-       
-    };
-  },
-
-}
-
+export default {
+  name: "",
+  data() {
+    return {};
+  },
+};
 </script>
 <style lang="less" scoped>
 </style>

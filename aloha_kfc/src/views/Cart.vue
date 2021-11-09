@@ -85,6 +85,8 @@ export default {
       //已选的商品 用cardid标识
       selectedGoods: [],
       isShowSubmitBtn: true,
+      //默认地址
+      defaddress: [],
     };
   },
   methods: {
@@ -126,9 +128,50 @@ export default {
       //判断是结算还是移除
       if (this.isShowSubmitBtn) {
         this.computedTotalPrice();
+        this.orderGoods();
       } else {
         this.delCardGoods();
       }
+    },
+    orderGoods() {
+      //这里拿到了地址
+      this.axios({
+        method: "get",
+        url: "/findAddress",
+        params: {
+          userId: this.$store.state.uid,
+        },
+      })
+        .then((res) => {
+          res.data.data.map((item) => {
+            if (item.defaultAddress) {
+              let list = {};
+              list.id = item.userId;
+              list.name = item.name;
+              list.tel = item.phone;
+              list.address = item.area + item.detialArea;
+              list.isDefault = item.defaultAddress;
+              this.defaddress.push(list);
+            }
+          });
+        })
+        .catch((err) => {});
+
+      //这里把订单放到json 已经提交到了json 状态就是0
+      this.axios({
+        method: "POST",
+        url: "/order",
+        data: {
+          id: this.$store.state.uid,
+          product: this.selectedGoods,
+          allPrice: this.totalPrice,
+          address: this.defaddress,
+        },
+      })
+        .then((res) => {
+          this.$router.push("/order");
+        })
+        .catch((err) => {});
     },
     delCardGoods() {
       this.axios({
@@ -172,8 +215,10 @@ export default {
       })
         .then((res) => {
           //在这里修改selectedGoods的count
-          const index = this.selectedGoods.findIndex(item => item.carId === carId.name)
-          this.selectedGoods[index].count = count
+          const index = this.selectedGoods.findIndex(
+            (item) => item.carId === carId.name
+          );
+          this.selectedGoods[index].count = count;
           this.getInfo();
           this.computedTotalPrice();
         })
@@ -185,7 +230,7 @@ export default {
         totalprice = totalprice + item.count * item.product.Price;
       });
       this.totalPrice = totalprice * 100;
-      console.log(totalprice * 100)
+      console.log(totalprice * 100);
     },
   },
   created() {

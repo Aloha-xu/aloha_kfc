@@ -42,6 +42,21 @@ const routes = [
     name:'Cart',
     component:()=>import('../views/Cart.vue')
   },
+  {
+    path:'/address',
+    name:'Address',
+    component:()=>import('../views/Address.vue')
+  },
+  {
+    path:'/order',
+    name:'Order',
+    component:()=>import('../views/Order.vue')
+  },
+  {
+    path:'/allorder',
+    name:'AllOrder',
+    component:()=>import('../views/AllOrder.vue')
+  },
   // 重定向  ⭐
   // * 除了上面已经定义的路径 会自动跳到想要的页面
   {

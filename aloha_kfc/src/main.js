@@ -7,7 +7,7 @@ import store from './store'
 import { Button } from 'vant'
 import 'lib-flexible/flexible'
 
-import { Form, Field ,Popup ,Tabbar, TabbarItem,Search,Swipe, SwipeItem,Stepper,Icon,Lazyload,Empty,SubmitBar,GoodsAction,GoodsActionIcon,GoodsActionButton,NavBar,Tab, Tabs,Cell,CellGroup,Checkbox, CheckboxGroup,Toast} from 'vant';
+import { Form, Field, Popup, Tabbar, TabbarItem, Search, Swipe, SwipeItem, Stepper, Icon, Lazyload, Empty, SubmitBar, GoodsAction, GoodsActionIcon, GoodsActionButton, NavBar, Tab, Tabs, Cell, CellGroup, Checkbox, CheckboxGroup, Toast, Image, Area, Switch, AddressEdit, AddressList ,Card } from 'vant';
 Vue.use(Toast);
 Vue.use(Tab);
 Vue.use(Tabs);
@@ -33,7 +33,13 @@ Vue.use(Cell)
 Vue.use(CellGroup)
 Vue.use(Field);
 Vue.use(Checkbox);
+Vue.use(Image);
 Vue.use(CheckboxGroup);
+Vue.use(Area);
+Vue.use(Switch);
+Vue.use(AddressEdit);
+Vue.use(AddressList);
+Vue.use(Card );
 
 Vue.config.productionTip = false
 
