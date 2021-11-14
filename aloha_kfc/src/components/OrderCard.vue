@@ -4,6 +4,9 @@
       <slot name="no">
         <div class="no">
           <span>NO {{ item.orderNo }}</span>
+          <span class="no-right">{{stutas(item)}}
+            <img src="http://114.132.239.118:3003/getpic/1636517398014.png" alt="" v-if="item.stutas==2" @click="delectOrder(item.orderId)">
+          </span>
         </div>
       </slot>
       <div class="order-item" v-for="item1 in item.product">
@@ -48,6 +51,31 @@ export default {
     clearInterval(times);
     times = null;
   },
+  methods: {
+    stutas(item){
+      //判断是哪一种状态
+      let stutas = ''
+      switch(item.stutas){
+        case 0:
+          stutas = "待发货"
+          break;
+        case 1:
+          stutas = "待收货"
+          break;
+        case 2:
+          stutas = "已完成"
+          break;
+      }
+      return stutas
+    },
+    delectOrder(orderId){
+
+      this.$emit('delectOrder',orderId)
+
+
+     
+    }
+  },
 };
 </script>
 
@@ -58,6 +86,9 @@ export default {
   .no {
     background-color: white;
     padding: 10px;
+    .no-right{
+      float: right;
+    }
   }
   .order-other {
     border-top: 1px dotted black;

@@ -3,8 +3,8 @@
   <div class="home">
     <div class="nav-box">
       <div class="time">下午好</div>
-      <div class="search-box">
-        <van-search v-model="searchValue" placeholder="请输入搜索关键词" />
+      <div class="search-box" @click="clickToSearch">
+        <van-search  placeholder="请输入搜索关键词" />
       </div>
     </div>
 
@@ -80,6 +80,9 @@ export default {
     goToDetailPapg(pid){
       console.log(pid)
       this.$router.push(`/detail/${pid}`)
+    },
+    clickToSearch(){
+      this.$router.push('/search')
     }
   },
 };

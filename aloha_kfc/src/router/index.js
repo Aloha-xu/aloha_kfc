@@ -57,6 +57,11 @@ const routes = [
     name:'AllOrder',
     component:()=>import('../views/AllOrder.vue')
   },
+  {
+    path:'/search',
+    name:'Search',
+    component:()=>import('../views/Search.vue')
+  },
   // 重定向  ⭐
   // * 除了上面已经定义的路径 会自动跳到想要的页面
   {

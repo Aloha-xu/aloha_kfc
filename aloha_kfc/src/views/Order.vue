@@ -84,6 +84,9 @@ export default {
             list.address = item.area + item.detialArea;
             list.isDefault = item.defaultAddress;
             this.list.push(list);
+            if(item.defaultAddress){
+              this.selectAddress = list
+            }
           });
         })
         .catch((err) => {});
@@ -127,6 +130,7 @@ export default {
 <style scoped lang='less'>
 .order-address{
   background-color: rgb(252, 252, 252);
+  padding-left: 5px;
   .address-top{
     .name,.phone{
       padding: 0 10px;

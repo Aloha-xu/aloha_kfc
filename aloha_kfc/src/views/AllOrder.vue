@@ -16,7 +16,7 @@
         ><OrderCard :orderInfo="orderingInfo"></OrderCard
       ></van-tab>
       <van-tab title="已完成"
-        ><OrderCard :orderInfo="orderedInfo"></OrderCard
+        ><OrderCard :orderInfo="orderedInfo" @></OrderCard
       ></van-tab>
     </van-tabs>
   </div>
@@ -85,6 +85,20 @@ export default {
       }
       
     },
+    delectOrder(){
+       this.axios({
+        method: "post",
+        url: "/delectOrder",
+        data: {
+          id: this.$store.state.uid,
+          orderId : orderId
+        },
+      })
+        .then((res) => {
+          console.log(res)
+        })
+        .catch((err) => {});
+    }
   },
   created() {
     this.getOrder();

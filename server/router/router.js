@@ -846,7 +846,7 @@ module.exports = app => {
         }
 
         // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
-        if (!req.query.hasOwnProperty('id') || !req.query.hasOwnProperty('stutas')) {
+        if (!req.query.hasOwnProperty('id')|| !req.query.hasOwnProperty('stutas')) {
             res.send({ msg: "传递的参数有误请检查", status: 206 });
             return
         }
@@ -871,16 +871,17 @@ module.exports = app => {
                 let carData = [];
                 for (let index = 0; index < person.order.length; index++) {
 
-                    if (params.stutas == 2) {
+                    if(params.stutas==2){
                         if (params.id == person.order[index].id) {
                             carData.push(person.order[index])
                         }
-                    } else {
-                        if (params.id == person.order[index].id && params.stutas == person.order[index].stutas) {
+                    }else {
+                        if (params.id == person.order[index].id && params.stutas== person.order[index].stutas) {
                             carData.push(person.order[index])
                         }
                     }
 
+                  
                 }
 
                 if (carData.length == 0) {
@@ -1070,6 +1071,7 @@ module.exports = app => {
                 let carData = [];
                 for (let index = 0; index < person.result.length; index++) {
 
+                    //match xxxxxx
                     if (person.result[index].name.match(params.key)) {
                         carData.push(person.result[index])
                     }
@@ -1088,6 +1090,70 @@ module.exports = app => {
         writeJson(params)
 
     })
+
+
+    //删除地址  返回个人userId和地址addId回来
+
+    app.post('/deleteAddress', (req, res) => {
+        
+
+        if (JSON.stringify(req.body) === '{}') {
+           res.send({ msg: "传递的参数不能为空,请检查", length: 0, status: 205 });
+           return
+       }
+
+
+       // // 验证传递的参数是否正确,否则返回参数不对  怕参数不对进行比较会产生一些后果
+       if (!req.body.hasOwnProperty('userId') || !req.body.hasOwnProperty('addId')) {
+           res.send({ msg: "传递的参数有误请检查", status: 206 });
+           return
+       }
+
+       // return
+       var fs = require('fs');
+       var params = req.body//在真实的开发中id肯定是随机生成的而且不会重复的，下一篇写如何生成随机切不会重复的随机数，现在就模拟一下假数据
+
+
+       console.log('测试传递的值', params)
+       //写入json文件选项
+       function writeJson(params) {
+           //现将json文件读出来
+           fs.readFile('./data/address.json', function (err, data) {
+               // console.log(data);
+               if (err) {
+                   res.send({ msg: "删除地址失败", stutas: 9900 })
+                   return console.error(err);
+               }
+
+               var person = data.toString();//将二进制的数据转换为字符串
+               person = JSON.parse(person);//将字符串转换为json对象
+
+               // 对数据进行筛选用es6的过滤
+               person.address = person.address.filter((item) => {
+                   // if(item){}
+
+                   if (!(item.userId == params.userId && item.addId == params.addId)) {
+                       return item
+                   }
+               })
+
+               person.total = person.address.length;//定义一下总条数，为以后的分页打基础
+               console.log('person.data==>', person);
+               var str = JSON.stringify(person);//因为nodejs的写入文件只认识字符串或者二进制数，所以把json对象转换成字符串重新写入json文件中
+               fs.writeFile('./data/address.json', str, function (err) {
+                   if (err) {
+                       res.send({ msg: "删除地址失败", stutas: 9900 })
+                       console.error(err);
+                   }
+
+                   res.send({ msg: "删除地址成功", stutas: 9901 })
+                   console.log('----------新增成功-------------');
+               })
+           })
+       }
+
+       writeJson(params)
+})
 
 
     //测试用的
