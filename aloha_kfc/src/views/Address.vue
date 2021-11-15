@@ -44,7 +44,7 @@ export default {
         method: "post",
         url: "/address",
         data: {
-          userId: "1",
+          userId: this.$store.state.uid,
           name:e.name,
           phone:e.tel,
           area:e.city + e.county,
@@ -55,6 +55,7 @@ export default {
       })
         .then((res) => {
           console.log(res)
+          this.$router.push('/addresslist')
         })
         .catch((err) => {});
     },

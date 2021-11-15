@@ -29,7 +29,7 @@
         <van-cell title="个人资料" is-link to="" />
         <van-cell title="我的订单" is-link to="/allorder" />
         <van-cell title="我的购物车" is-link to="/cart" />
-        <van-cell title="地址管理" is-link to="/address" />
+        <van-cell title="地址管理" is-link to="/addresslist" />
         <van-cell title="我的足迹" is-link to="" />
         <van-cell title="安全中心" is-link to="" />
       </div>

@@ -62,6 +62,11 @@ const routes = [
     name:'Search',
     component:()=>import('../views/Search.vue')
   },
+  {
+    path:'/addresslist',
+    name:'AddressList',
+    component:()=>import('../views/AddressList.vue')
+  },
   // 重定向  ⭐
   // * 除了上面已经定义的路径 会自动跳到想要的页面
   {
