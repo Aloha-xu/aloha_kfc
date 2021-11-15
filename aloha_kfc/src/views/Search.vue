@@ -14,7 +14,7 @@
       </van-search>
     </div>
     <!-- 有数据之后才显示 -->
-    <div class="product-box" v-for="item in searchData" :key="item.pid">
+    <div class="product-box" v-for="item in searchData" :key="item.pid" @click="handleToDetailPapg(item.pid)">
       <img :src="item.largeImg" alt="" />
       <div class="product-right">
         <div class="title">{{ item.name }}</div>
@@ -63,6 +63,9 @@ export default {
           console.log(err);
         });
     },
+    handleToDetailPapg(pid){
+      this.$router.push(`/detail/${pid}`)
+    }
   },
 };
 </script>
